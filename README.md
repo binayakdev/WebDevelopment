@@ -11,7 +11,6 @@ In order to run this project we need XAMMP.
 6. Open the XML and add the following line below the prefix (first line of the XML file)
    - ```xml
          <?xml-stylesheet type="text/css" href="catalog_17031105.css"?>
-     ``
    - ```xml
          <DOCTYPE ITCompany SYSTEM "sample.dtd">
       ```
