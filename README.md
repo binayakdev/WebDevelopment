@@ -9,7 +9,11 @@ In order to run this project we need XAMMP.
 4. Go inside the project and run the php file
 5. An XML document is generated.
 6. Open the XML and add the following line below the prefix (first line of the XML file)
-   - '<?xml-stylesheet type="text/css" href="catalog_17031105.css"?>'
+   - ```xml
+         <myxml>
+            <someElement />  
+         </myxml>
+```'<?xml-stylesheet type="text/css" href="catalog_17031105.css"?>'
    - '<!DOCTYPE ITCompany SYSTEM "sample.dtd">'
 7. Finally, open the XML file in the browser.
     
