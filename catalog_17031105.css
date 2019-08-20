@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Da|Montserrat:600|Sonsie+One|Pacifico|Source+Code+Pro:600|Russo+One|Bitter|Yeseva+One|Space+Mono:800|Cinzel+Decorative:700');
+
+* {
+	margin : 0;
+	padding: 0;
+}
+
+ITCompany{
+	font-family: sans-serif;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+ITCompany Details{
+	width:100%;
+	height: 800px;
+	display:block;
+	background-image: url(./images/background.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+ITCompany Details Logo{
+	width: 300px;
+	background-image: url(./images/LOGO.png);
+	mix-blend-mode: darken;
+	margin-top:10%;
+	margin-left: -33%;
+	height: 200px;
+	position: absolute;
+}
+
+ITCompany Details > Name, Address, TelephoneNumber, URL{
+	position:absolute;
+	text-align: left;
+	display:block;
+}
+
+ITCompany Details Name{
+	margin-left:20%;
+	margin-top:25%;
+	font-size: 70px;
+	font-weight:600;
+	font-style:thin;
+	font-family: 'Bitter', serif;
+}
+ITCompany Details URL{
+	margin-left:20%;
+	margin-top:30%;
+	font-size:30px;
+	font-weight:500;
+	font-family: 'Russo One', sans-serif;
+	color:gray;
+}
+
+ITCompany Details Address{
+	margin-top:33%;
+	margin-left:20%;
+	font-size: 20px;
+	font-weight:400;
+	font-family: 'Baloo Da', cursive;
+	color: rgb(100,100,100);
+}
+
+ITCompany Details TelephoneNumber{
+	margin-top:35%;
+	margin-left:20%;
+	font-size: 15px;
+	font-weight:400;
+	font-family: 'Baloo Da', cursive;
+	color: rgb(100,100,100);
+}
+
+ITCompany CEO{
+	display:block;
+	text-align: center;
+	position: absolute;
+	background-color: rgb(0,0,0,0.9);
+	color:gray;
+	height: 2000px;
+	margin-top: 5%;
+	margin-left:10%;
+	width: 80%;
+	border: solid 1px black;
+	border-radius: 50px;
+	display: block;
+	box-shadow: 5x 55 14 px gray;
+}
+
+ITCompany CEO Name, Title, PhoneNumber{
+	display:block;
+	line-height: 1.3em;
+} 
+
+ITCompany CEO::before{
+	content: 'Contact: ' attr(Email);
+	background:lightblue;
+	color:black;
+	padding: 10px;
+	border-radius:10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+ITCompany CEO > Photo{
+	display:block;
+	margin-top:30px;
+	height: 300px;
+	width:300px;
+	margin-left:38%;
+	border:solid 1px gray;
+	background-image: url(./images/ceo.jpg);
+
+}
+
+ITCompany CEO > Name{
+	font-size:30px;
+	font-family: 'Pacifico', cursive;
+	padding: 5px;
+}
+
+ITCompany CEO > Title, PhoneNumber{
+	font-size: 15px;
+	font-family: 'Source Code Pro', monospace;
+	padding:5px;
+}
+
+ITCompany CEO Manager[manager_id="M1"], Manager[manager_id="M2"], Manager[manager_id="M3"], Manager[manager_id="M4"]{
+	display: flex;
+}
+
+ITCompany CEO Manager[manager_id="M1"]{
+	margin-top:5%;
+	display:block;
+	height:680px;
+	width:500px;
+	background-color:#fff;
+	border-radius: 20px;
+	color:black;
+	float:left;
+	margin-left: 5%;
+	box-shadow: 5px 5px  gray;
+}
+
+ITCompany CEO Manager[manager_id="M1"]:before{
+	content: 'Contact: ' attr(Email);
+	background:lightblue;
+	color:black;
+	padding: 10px;
+	border-radius:10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+ITCompany CEO Manager[manager_id="M1"] > Photo{
+	display:block;
+	margin-top:30px;
+	margin-left:20%;
+	background:red;
+	height: 300px;
+	width:300px;
+	background-image: url(./images/manager1.jpg);
+	background-size: scale(0.5);
+	border:solid 1px gray;
+	border-radius:50%;
+}
+
+ITCompany CEO Manager[manager_id="M2"]{
+	margin-top:5%;
+	display:block;
+	float:right;
+	height:680px;
+	width:500px;
+	background-color:#fff;
+	border-radius: 20px;
+	color:black;
+	margin-right: 5%;
+	box-shadow: 5px 5px gray;
+}
+
+ITCompany CEO Manager[manager_id="M2"]:before{
+	content: 'Contact: ' attr(Email);
+	background:lightblue;
+	color:black;
+	padding: 10px;
+	border-radius:10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+ITCompany CEO Manager[manager_id="M2"] > Photo{
+	display:block;
+	margin-top:30px;
+	margin-left:20%;
+	height: 300px;
+	width:300px;
+	background-image: url(./images/manger2.jpg);
+	border:solid 1px gray;
+	border-radius:50%;
+}
+
+ITCompany CEO Manager[manager_id="M3"]{
+	display:block;
+	float:left;
+	height:690px;
+	width:500px;
+	background-color:#fff;
+	border-radius: 20px;
+	color:black;
+	margin-left: 5%;
+	margin-top: 5%;
+	box-shadow: 5px 5px  gray;
+}
+
+ITCompany CEO Manager[manager_id="M3"]:before{
+	content: 'Contact: ' attr(Email);
+	background:lightblue;
+	color:black;
+	padding: 10px;
+	border-radius:10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+ITCompany CEO Manager[manager_id="M3"] > Photo{
+	display:block;
+	margin-top:30px;
+	margin-left:27%;
+	height: 220px;
+	width:220px;
+	background-image: url(./images/manger4.jpg);
+	border:solid 1px gray;
+	border-radius:50%;
+}
+
+ITCompany CEO > Manager[manager_id="M3"] HumanResource Team, 
+Manager[manager_id="M1"] ResearchandDevelopment Team, 
+Manager[manager_id="M2"] Marketing Team,
+Manager[manager_id="M4"] > WebDepartment > TeamLeader, Team, MobileDepartment > TeamLeader, Team{
+	display:block;
+}
+
+ITCompany CEO Manager[manager_id="M4"] > WebDepartment, MobileDepartment{
+	display:grid;
+	padding: 22px;
+}
+
+ITCompany CEO Manager[manager_id="M4"] > WebDepartment{
+	height: 50px;
+	text-align:center;
+	float:left;
+}
+
+ITCompany CEO Manager[manager_id="M4"] > MobileDepartment{
+	height:50px;
+	text-align:center;
+	float:right;
+}
+
+ITCompany CEO Manager[manager_id="M4"]{
+	display:block;
+	float:right;
+	height:690px;
+	width:500px;
+	background-color:#fff;
+	border-radius: 20px;
+	color:black;
+	margin-right: 5%;
+	margin-top:5%;
+	box-shadow: 5px 5px  gray;
+}
+
+ITCompany CEO Manager[manager_id="M4"]::before{
+	content: 'Contact: ' attr(Email);
+	background:lightblue;
+	color:black;
+	padding: 10px;
+	border-radius:10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+ITCompany CEO Manager[manager_id="M1"] > Title::after{
+	display:block;
+	content: 'Department of	Research and Development';
+}
+
+ITCompany CEO Manager[manager_id="M2"] > Title::after{
+	display:block;
+	content: 'Department of Marketing';
+}
+
+ITCompany CEO Manager[manager_id="M3"] > Title::after{
+	display:block;
+	content: 'Department of Human Resource';
+}
+
+ITCompany CEO Manager[manager_id="M4"] > Title::after{
+	display:block;
+	content: 'Department of Web & Mobile Development';
+}
+
+
+ITCompany CEO Manager[manager_id="M4"] > Photo{
+	display:block;
+	margin-top:30px;
+	margin-left:27%;
+	height: 220px;
+	width:220px;
+	background-image: url(./images/manger3.jpg);
+	border:solid 1px gray;
+	border-radius:50%;
+}
+
+ITCompany CEO > Manager[manager_id="M1"], 
+Manager[manager_id="M2"],
+Manager[manager_id="M3"],
+Manager[manager_id="M4"]{
+	line-height: 1.8em;
+}
+
+ITCompany CEO > Manager[manager_id="M1"] > Name, 
+Manager[manager_id="M2"] > Name,
+Manager[manager_id="M3"] > Name,
+Manager[manager_id="M4"] > Name{
+	margin-top:2%;
+	font-size:25px;
+	font-family: 'Yeseva One', cursive;
+}
+
+ITCompany CEO > Manager[manager_id="M1"] > Title,
+Manager[manager_id="M2"] > Title,
+Manager[manager_id="M3"] > Title,
+Manager[manager_id="M4"] > Title{
+	font-family: 'Space Mono', monospace;
+	font-family: 20px;
+	font-style:bold;
+	font-weight:800;
+}
+
+ITCompany CEO > Manager[manager_id="M1"] > ResearchandDevelopment::before,
+Manager[manager_id="M2"] > Marketing::before,
+Manager[manager_id="M3"] HumanResource::before,
+Manager[manager_id="M4"] > WebDepartment > TeamLeader::after, MobileDepartment > TeamLeader::after{
+	margin-top: 4%;
+	display:block;
+	content: 'Team';
+	font-weight:600;
+	color:#4F4E4E;
+}
+
+ITCompany CEO > Manager[manager_id="M4"] > WebDepartment::before{
+	margin-top:5%;
+	display:block;
+	content:'Team Leader (Web)';
+	font-weight:600;
+	color:#4F4E4E;
+}
+
+ITCompany CEO > Manager[manager_id="M4"] > MobileDepartment::before{
+	margin-top:5%;
+	display:block;
+	content:'Team Leader (Mobile)';
+	font-weight:600;
+	color:#4F4E4E;
+}
+
+ITCompany CEO >Manager[manager_id="M4"] > WebDepartment > TeamLeader, MobileDepartment > TeamLeader{
+	font-family: 'Space Mono', monospace;
+	font-family: 15px;
+	font-weight:600;
+	color:gray;
+} 
+
+ITCompany CEO > Manager[manager_id="M1"] > ResearchandDevelopment >Team,
+Manager[manager_id="M2"] > Marketing > Team,
+Manager[manager_id="M3"] > HumanResource > Team,
+Manager[manager_id="M4"] > WebDepartment > Team, MobileDepartment > Team {
+	font-family: 'Space Mono', monospace;
+	font-family: 15px;
+	color:gray;
+	display:list-item;
+	list-style-type: none;
+}

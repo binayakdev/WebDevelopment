@@ -1,0 +1,24 @@
+<!ELEMENT ITCompany (Details, CEO)>
+<!ELEMENT Details (Logo, Name, Address, TelephoneNumber, URL)>
+<!ELEMENT CEO (Photo, Name, Title, PhoneNumber, Manager+)>
+<!ATTLIST CEO Email CDATA #REQUIRED>
+<!ELEMENT Manager (Photo, Name, Title, PhoneNumber?, ResearchandDevelopment?, Marketing?, HumanResource?, WebDepartment?, MobileDepartment?)>
+<!ATTLIST Manager Email CDATA #REQUIRED>
+<!ATTLIST Manager manager_id ID #REQUIRED>
+<!ELEMENT ResearchandDevelopment (Team+)>
+<!ELEMENT Marketing (Team+)>
+<!ELEMENT HumanResource (Team+)>
+<!ELEMENT WebDepartment (TeamLeader, Team+)>
+<!ELEMENT MobileDepartment (TeamLeader, Team+)>
+<!ELEMENT Team (#PCDATA|NonProgrammer)*>
+<!ELEMENT Logo (#PCDATA)>
+<!ELEMENT Photo (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT TelephoneNumber (#PCDATA)>
+<!ELEMENT URL (#PCDATA)>
+<!ELEMENT PhoneNumber (#PCDATA)>
+<!ELEMENT TeamLeader (#PCDATA)>
+<!ATTLIST Team empID ID #REQUIRED>
+<!ELEMENT NonProgrammer (#PCDATA)>
