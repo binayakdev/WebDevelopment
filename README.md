@@ -1,5 +1,5 @@
 # WebDevelopment
-This is a web page made with PHP, XML and CSS. The onventional  web technologies (HTML and CSS) are not used.
+This is a web page made with PHP, XML and CSS. The conventional  web technologies (HTML and CSS) are not used.
 
 ## How to run
 In order to run this project we need XAMMP.
